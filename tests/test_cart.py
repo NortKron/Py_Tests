@@ -2,7 +2,6 @@ import time
 import random
 
 from constants import TestData as testdata
-from pages.shopping_cart import ShoppingCartPage
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By

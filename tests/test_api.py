@@ -7,9 +7,7 @@ from external_api.GitHubAPI import GitHubAPI
 def test_actions_with_repo():
 
     load_dotenv()
-
-    name_os: str = os.getenv('GITHUB_REPOSITORY')
-    test_name_repository = name_os + datetime.now().strftime('%H%M%S')
+    test_name_repository = os.getenv('GITHUB_REPOSITORY')
 
     #Создание подключения
     apiGitHub = GitHubAPI()
